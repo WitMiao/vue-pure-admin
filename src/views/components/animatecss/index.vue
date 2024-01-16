@@ -29,6 +29,6 @@ watch(icon, () => {
         </span>
       </div>
     </template>
-    <ReAnimateSelector v-model="icon" />
+    <ReAnimateSelector v-model="icon" class="!w-[200px]" />
   </el-card>
 </template>

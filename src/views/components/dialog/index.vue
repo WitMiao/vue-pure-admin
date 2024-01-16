@@ -422,7 +422,7 @@ function onBeforeSureClick() {
     title: "点击底部确定按钮的回调",
     contentRenderer: () => (
       <p>
-        弹框内容-点击底部确定按钮的回调（会暂停弹框的关闭，经常用于新增、编辑弹框内容后调用接口）
+        弹框内容-点击底部确定按钮的回调（会暂停弹框的关闭，经常用于新增、修改弹框内容后调用接口）
       </p>
     ),
     beforeSure: (done, { options, index }) => {
@@ -454,9 +454,10 @@ function onBeforeSureClick() {
           ，采用函数式调用弹框组件（更多操作实例请参考
           <span
             class="cursor-pointer text-primary"
-            @click="router.push({ name: 'Dept' })"
-            >系统管理页面</span
+            @click="router.push({ name: 'SystemDept' })"
           >
+            系统管理页面
+          </span>
           ）
         </span>
       </div>
@@ -510,7 +511,7 @@ function onBeforeSureClick() {
         点击底部取消按钮的回调（会暂停弹框的关闭）
       </el-button>
       <el-button @click="onBeforeSureClick">
-        点击底部确定按钮的回调（会暂停弹框的关闭，经常用于新增、编辑弹框内容后调用接口）
+        点击底部确定按钮的回调（会暂停弹框的关闭，经常用于新增、修改弹框内容后调用接口）
       </el-button>
     </el-space>
   </el-card>
